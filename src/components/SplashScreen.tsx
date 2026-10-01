@@ -51,17 +51,23 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
 
       {/* Logo */}
       <div
-        className="relative z-10 flex flex-col items-center"
+        className="relative z-10 flex flex-col items-center gap-3"
         style={{ animation: "popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both" }}
       >
         <Image
           src="/images/logo2.png"
           alt="Plato"
-          width={200}
-          height={200}
+          width={220}
+          height={220}
           className="drop-shadow-2xl"
           priority
         />
+        <p
+          className="text-white font-black text-3xl tracking-wide"
+          style={{ textShadow: "0 2px 16px rgba(0,0,0,0.18)", marginTop: "-32px" }}
+        >
+          Plato
+        </p>
       </div>
 
       <style>{`
