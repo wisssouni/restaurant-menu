@@ -30,7 +30,7 @@ export default function DashboardNav({ restaurant }: { restaurant: Restaurant })
         {/* Logo */}
         <div className="px-6 py-6 border-b border-white/10">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl overflow-hidden shrink-0 bg-orange-500 p-1">
+            <div className="w-9 h-9 rounded-xl overflow-hidden shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/logo2.png" alt="Plato" className="w-full h-full object-contain" />
             </div>
@@ -75,7 +75,7 @@ export default function DashboardNav({ restaurant }: { restaurant: Restaurant })
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-gray-900 text-white h-14 flex items-center justify-between px-4">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg overflow-hidden bg-orange-500 p-0.5">
+          <div className="w-7 h-7 rounded-lg overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/logo2.png" alt="Plato" className="w-full h-full object-contain" />
           </div>

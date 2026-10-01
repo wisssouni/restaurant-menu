@@ -51,14 +51,12 @@ export default function LoginPage() {
         <div className="w-full max-w-sm">
           {/* Logo */}
           <div className="text-center mb-8">
-            <div className="w-24 h-24 mx-auto mb-2 bg-orange-500 rounded-2xl p-2 flex items-center justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/logo2.png"
-                alt="Plato"
-                className="w-full h-full object-contain"
-              />
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo2.png"
+              alt="Plato"
+              className="w-28 h-28 mx-auto mb-2 object-contain"
+            />
             <h1 className="text-2xl font-bold text-gray-900">Welcome back</h1>
             <p className="text-gray-500 text-sm mt-1">Sign in to your restaurant dashboard</p>
           </div>
