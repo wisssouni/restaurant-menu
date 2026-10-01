@@ -30,9 +30,12 @@ export default function DashboardNav({ restaurant }: { restaurant: Restaurant })
         {/* Brand */}
         <div className="px-6 pt-8 pb-6">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl overflow-hidden shrink-0 bg-white/10 p-1">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/logo2.png" alt="Plato" className="w-full h-full object-contain" />
+            <div className="relative w-10 h-10 shrink-0">
+              <div className="absolute inset-0 rounded-2xl bg-orange-500 opacity-30 blur-md" />
+              <div className="relative w-10 h-10 rounded-2xl overflow-hidden bg-orange-500/20 border border-orange-400/30 p-1">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/logo2.png" alt="Plato" className="w-full h-full object-contain" />
+              </div>
             </div>
             <div>
               <p className="font-black text-base text-white tracking-tight">Plato</p>

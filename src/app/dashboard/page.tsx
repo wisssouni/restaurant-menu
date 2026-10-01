@@ -37,7 +37,16 @@ export default async function DashboardPage() {
 
         <div className="relative z-10">
           <p className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2">{greeting}</p>
-          <h1 className="text-3xl font-black text-white tracking-tight leading-tight">{restaurant.name}</h1>
+          <div className="flex items-center gap-4 mb-1">
+            <div className="relative w-14 h-14 shrink-0">
+              <div className="absolute inset-0 rounded-2xl bg-orange-500 opacity-40 blur-lg" />
+              <div className="relative w-14 h-14 rounded-2xl overflow-hidden bg-orange-500/20 border border-orange-400/30 p-1.5">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/logo2.png" alt="Plato" className="w-full h-full object-contain" />
+              </div>
+            </div>
+            <h1 className="text-3xl font-black text-white tracking-tight leading-tight">{restaurant.name}</h1>
+          </div>
           {restaurant.description && (
             <p className="text-gray-500 text-sm mt-1">{restaurant.description}</p>
           )}
