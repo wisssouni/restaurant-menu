@@ -57,9 +57,7 @@ export default function RegisterPage() {
     <main className="min-h-screen flex items-center justify-center bg-[#f5f5f0] px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="w-14 h-14 bg-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <ChefHat size={28} className="text-white" />
-          </div>
+          <img src="/images/logo2.png" alt="Plato" className="w-24 h-24 mx-auto mb-2 object-contain" />
           <h1 className="text-2xl font-bold text-gray-900">Create your menu</h1>
           <p className="text-gray-500 text-sm mt-1">Set up your restaurant in minutes</p>
         </div>
