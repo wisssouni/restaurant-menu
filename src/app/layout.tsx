@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MenuQR — Digital menus for restaurants",
+  title: "Plato — Digital menus for restaurants",
   description: "Scan, browse, enjoy.",
 };
 

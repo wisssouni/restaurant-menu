@@ -5,6 +5,7 @@ import Image from "next/image";
 import { translateBatch, LANGUAGES } from "@/lib/translate";
 import type { MenuItem, Category } from "@/lib/types";
 import { Loader2, Globe, X, Check } from "lucide-react";
+import SplashScreen from "@/components/SplashScreen";
 
 interface Restaurant {
   id: string;
@@ -43,6 +44,7 @@ export default function PublicMenu({ restaurant, categories, items }: Props) {
   const [translating, setTranslating] = useState(false);
   const [activeCategory, setActiveCategory] = useState("all");
   const [langOpen, setLangOpen] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
 
   const applyTranslation = useCallback(async (targetLang: string) => {
     if (targetLang === "original") {
@@ -101,6 +103,7 @@ export default function PublicMenu({ restaurant, categories, items }: Props) {
   return (
     <div className="min-h-screen bg-[#faf9f6]" dir={isRTL ? "rtl" : "ltr"}>
 
+      {showSplash && <SplashScreen onDone={() => setShowSplash(false)} />}
       {/* Language sheet */}
       {langOpen && (
         <div
@@ -247,7 +250,7 @@ export default function PublicMenu({ restaurant, categories, items }: Props) {
       </div>
 
       <footer className="text-center text-xs text-gray-300 py-10 border-t border-gray-100">
-        Powered by <span className="font-semibold text-gray-400">MenuQR</span>
+        Powered by <span className="font-semibold text-gray-400">Plato</span>
       </footer>
     </div>
   );
