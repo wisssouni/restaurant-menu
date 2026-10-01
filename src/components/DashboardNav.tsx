@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { UtensilsCrossed, QrCode, LayoutDashboard, LogOut, ChefHat } from "lucide-react";
+import { UtensilsCrossed, QrCode, LayoutDashboard, LogOut } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import type { Restaurant } from "@/lib/types";
 import clsx from "clsx";
@@ -30,8 +30,9 @@ export default function DashboardNav({ restaurant }: { restaurant: Restaurant })
         {/* Logo */}
         <div className="px-6 py-6 border-b border-white/10">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-orange-500 rounded-xl flex items-center justify-center shrink-0">
-              <ChefHat size={18} className="text-white" />
+            <div className="w-9 h-9 rounded-xl overflow-hidden shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/logo2.png" alt="Plato" className="w-full h-full object-contain" />
             </div>
             <div className="min-w-0">
               <p className="font-bold text-sm truncate">{restaurant.name}</p>
@@ -74,8 +75,9 @@ export default function DashboardNav({ restaurant }: { restaurant: Restaurant })
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-gray-900 text-white h-14 flex items-center justify-between px-4">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 bg-orange-500 rounded-lg flex items-center justify-center">
-            <ChefHat size={14} className="text-white" />
+          <div className="w-7 h-7 rounded-lg overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/logo2.png" alt="Plato" className="w-full h-full object-contain" />
           </div>
           <span className="font-bold text-sm truncate max-w-[140px]">{restaurant.name}</span>
         </div>
