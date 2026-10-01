@@ -55,7 +55,7 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
         style={{ animation: "popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both" }}
       >
         <Image
-          src="/images/logo.png"
+          src="/images/logo2.png"
           alt="Plato"
           width={200}
           height={200}

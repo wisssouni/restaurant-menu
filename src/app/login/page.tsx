@@ -53,7 +53,7 @@ export default function LoginPage() {
           <div className="text-center mb-8">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/logo.png"
+              src="/images/logo2.png"
               alt="Plato"
               className="w-24 h-24 mx-auto mb-2 object-contain"
             />
